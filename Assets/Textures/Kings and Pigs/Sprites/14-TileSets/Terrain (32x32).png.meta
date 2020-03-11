@@ -1,0 +1,1009 @@
+fileFormatVersion: 2
+guid: 1defd914ffc3cef4f935a69e5a3d2665
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2113894134886356154
+    second: Terrain (32x32)_0
+  - first:
+      213: -9114847578740223409
+    second: Terrain (32x32)_1
+  - first:
+      213: 4239696434956193796
+    second: Terrain (32x32)_2
+  - first:
+      213: 8516645164251878092
+    second: Terrain (32x32)_3
+  - first:
+      213: 3709395470188729914
+    second: Terrain (32x32)_4
+  - first:
+      213: -1459069242253791122
+    second: Terrain (32x32)_5
+  - first:
+      213: 8749005635180653793
+    second: Terrain (32x32)_6
+  - first:
+      213: -2363056867471366736
+    second: Terrain (32x32)_7
+  - first:
+      213: -4332446442371571619
+    second: Terrain (32x32)_8
+  - first:
+      213: -8883423204702779729
+    second: Terrain (32x32)_9
+  - first:
+      213: 8103538333889938161
+    second: Terrain (32x32)_10
+  - first:
+      213: 9048098576551171047
+    second: Terrain (32x32)_11
+  - first:
+      213: 5550582127777731385
+    second: Terrain (32x32)_12
+  - first:
+      213: -7635356268976036439
+    second: Terrain (32x32)_13
+  - first:
+      213: 1157080223378462048
+    second: Terrain (32x32)_14
+  - first:
+      213: -6403107747435768202
+    second: Terrain (32x32)_15
+  - first:
+      213: -1544894614388092976
+    second: Terrain (32x32)_16
+  - first:
+      213: 4217461280459406555
+    second: Terrain (32x32)_17
+  - first:
+      213: -4930185675006519976
+    second: Terrain (32x32)_18
+  - first:
+      213: -4696632766430068495
+    second: Terrain (32x32)_19
+  - first:
+      213: 1243350276117333252
+    second: Terrain (32x32)_20
+  - first:
+      213: 3385679346202453554
+    second: Terrain (32x32)_21
+  - first:
+      213: 8738314733589638094
+    second: Terrain (32x32)_22
+  - first:
+      213: 8666830670597921376
+    second: Terrain (32x32)_23
+  - first:
+      213: -1508313915633834259
+    second: Terrain (32x32)_0
+  - first:
+      213: -4818687947223445219
+    second: Terrain (32x32)_1
+  - first:
+      213: -8862662681284503667
+    second: Terrain (32x32)_2
+  - first:
+      213: -6331852894168301662
+    second: Terrain (32x32)_3
+  - first:
+      213: -8028578562908695574
+    second: Terrain (32x32)_4
+  - first:
+      213: 4553361989324335924
+    second: Terrain (32x32)_5
+  - first:
+      213: -8293329549339306361
+    second: Terrain (32x32)_6
+  - first:
+      213: 1134201895723883518
+    second: Terrain (32x32)_7
+  - first:
+      213: -971279530375944103
+    second: Terrain (32x32)_8
+  - first:
+      213: 5592669936569327829
+    second: Terrain (32x32)_9
+  - first:
+      213: 667436283048344755
+    second: Terrain (32x32)_10
+  - first:
+      213: 3223686352708310683
+    second: Terrain (32x32)_11
+  - first:
+      213: 744156296575360455
+    second: Terrain (32x32)_12
+  - first:
+      213: 5413790460973655297
+    second: Terrain (32x32)_13
+  - first:
+      213: -3914620857168788313
+    second: Terrain (32x32)_14
+  - first:
+      213: 813724644084710682
+    second: Terrain (32x32)_15
+  - first:
+      213: -4912663825205391746
+    second: Terrain (32x32)_16
+  - first:
+      213: 1537746452945973251
+    second: Terrain (32x32)_17
+  - first:
+      213: 4147400599333046875
+    second: Terrain (32x32)_18
+  - first:
+      213: 725802132470237267
+    second: Terrain (32x32)_19
+  - first:
+      213: -9186330405526615744
+    second: Terrain (32x32)_20
+  - first:
+      213: -709735635874037832
+    second: Terrain (32x32)_21
+  - first:
+      213: 112767595023074726
+    second: Terrain (32x32)_22
+  - first:
+      213: -6547278341058277893
+    second: Terrain (32x32)_23
+  - first:
+      213: -2936791710745090628
+    second: Terrain (32x32)_24
+  - first:
+      213: -1707878253529702307
+    second: Terrain (32x32)_25
+  - first:
+      213: -8728383186345377599
+    second: Terrain (32x32)_26
+  - first:
+      213: -8776397432039939674
+    second: Terrain (32x32)_27
+  - first:
+      213: 5097210526339842007
+    second: Terrain (32x32)_28
+  - first:
+      213: -2513879346030493484
+    second: Terrain (32x32)_29
+  - first:
+      213: -2969041350847514635
+    second: Terrain (32x32)_30
+  - first:
+      213: -1610354790490889277
+    second: Terrain (32x32)_31
+  - first:
+      213: -6560276675822979386
+    second: Terrain (32x32)_32
+  - first:
+      213: 4868307182515750219
+    second: Terrain (32x32)_33
+  - first:
+      213: 8889031353144245513
+    second: Terrain (32x32)_34
+  - first:
+      213: -12324268454884066
+    second: Terrain (32x32)_35
+  - first:
+      213: -1012594953271071554
+    second: Terrain (32x32)_36
+  - first:
+      213: -915352507628530066
+    second: Terrain (32x32)_37
+  - first:
+      213: 5504718189712137809
+    second: Terrain (32x32)_38
+  - first:
+      213: -6567338993810207375
+    second: Terrain (32x32)_39
+  - first:
+      213: -1647517347931888083
+    second: Terrain (32x32)_40
+  - first:
+      213: 299559052996832441
+    second: Terrain (32x32)_41
+  - first:
+      213: 6502491142666883771
+    second: Terrain (32x32)_42
+  - first:
+      213: 6885127967015840319
+    second: Terrain (32x32)_43
+  - first:
+      213: -8283676517091711715
+    second: Terrain (32x32)_44
+  - first:
+      213: 8576845579221683551
+    second: Terrain (32x32)_45
+  - first:
+      213: -5709979240835780729
+    second: Terrain (32x32)_46
+  - first:
+      213: -3920501327658573059
+    second: Terrain (32x32)_47
+  - first:
+      213: 6960820363678352256
+    second: Terrain (32x32)_48
+  - first:
+      213: 2361261416710784685
+    second: Terrain (32x32)_49
+  - first:
+      213: 8748934533700571379
+    second: Terrain (32x32)_50
+  - first:
+      213: -1003237281556518101
+    second: Terrain (32x32)_51
+  - first:
+      213: 2167178641356693581
+    second: Terrain (32x32)_52
+  - first:
+      213: -5688414592579563010
+    second: Terrain (32x32)_53
+  - first:
+      213: -1776422394228139669
+    second: Terrain (32x32)_54
+  - first:
+      213: 1022654863282120246
+    second: Terrain (32x32)_55
+  - first:
+      213: -996657573564455507
+    second: Terrain (32x32)_56
+  - first:
+      213: -5450112882807951249
+    second: Terrain (32x32)_57
+  - first:
+      213: 8837929274236208049
+    second: Terrain (32x32)_58
+  - first:
+      213: 8969087632853882348
+    second: Terrain (32x32)_59
+  - first:
+      213: 4478376099278307188
+    second: Terrain (32x32)_60
+  - first:
+      213: -1618197503159607877
+    second: Terrain (32x32)_61
+  - first:
+      213: -3380924289088166150
+    second: Terrain (32x32)_62
+  - first:
+      213: -8801291986591181387
+    second: Terrain (32x32)_63
+  - first:
+      213: -5645681066066357911
+    second: Terrain (32x32)_64
+  - first:
+      213: 538909327932558817
+    second: Terrain (32x32)_65
+  - first:
+      213: -4526886444840449869
+    second: Terrain (32x32)_66
+  - first:
+      213: 2913865528524152843
+    second: Terrain (32x32)_67
+  - first:
+      213: -2694742046232445392
+    second: Terrain (32x32)_68
+  - first:
+      213: -5611627923302939328
+    second: Terrain (32x32)_69
+  - first:
+      213: 6705844512150175775
+    second: Terrain (32x32)_70
+  - first:
+      213: 7756992474786954701
+    second: Terrain (32x32)_71
+  - first:
+      213: 5139404228693232197
+    second: Terrain (32x32)_72
+  - first:
+      213: -2701651782496971736
+    second: Terrain (32x32)_73
+  - first:
+      213: -6938149047964805663
+    second: Terrain (32x32)_74
+  - first:
+      213: -1548899832515325878
+    second: Terrain (32x32)_75
+  - first:
+      213: 5862921262446552523
+    second: Terrain (32x32)_76
+  - first:
+      213: 8006257600266145971
+    second: Terrain (32x32)_77
+  - first:
+      213: -3741181219524698823
+    second: Terrain (32x32)_78
+  - first:
+      213: -4524798020415664492
+    second: Terrain (32x32)_79
+  - first:
+      213: -2329063528070192035
+    second: Terrain (32x32)_80
+  - first:
+      213: -3313916609126551260
+    second: Terrain (32x32)_81
+  - first:
+      213: 4355139645102990892
+    second: Terrain (32x32)_82
+  - first:
+      213: 7276521402011691325
+    second: Terrain (32x32)_83
+  - first:
+      213: 630469584464062596
+    second: Terrain (32x32)_84
+  - first:
+      213: 3321075107539641400
+    second: Terrain (32x32)_85
+  - first:
+      213: -2560665351331762178
+    second: Terrain (32x32)_86
+  - first:
+      213: -388972771637846921
+    second: Terrain (32x32)_87
+  - first:
+      213: 6073694606739076769
+    second: Terrain (32x32)_88
+  - first:
+      213: -4537407130766249925
+    second: Terrain (32x32)_89
+  - first:
+      213: 6677824962274982429
+    second: Terrain (32x32)_90
+  - first:
+      213: -360585890479614453
+    second: Terrain (32x32)_91
+  - first:
+      213: -6808164498187367688
+    second: Terrain (32x32)_92
+  - first:
+      213: -3663827148789875764
+    second: Terrain (32x32)_93
+  - first:
+      213: 2649854154776137628
+    second: Terrain (32x32)_94
+  - first:
+      213: -4842185013625401292
+    second: Terrain (32x32)_95
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terrain (32x32)_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6edd03c74611be0800000000000000
+      internalID: -1508313915633834259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115a4ea7d4902db0800000000000000
+      internalID: -4818687947223445219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d871ded6f3f710580800000000000000
+      internalID: -8862662681284503667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afb111275db028a0800000000000000
+      internalID: -6331852894168301662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3d2829552c49090800000000000000
+      internalID: -8028578562908695574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b6173ca9ac03f30800000000000000
+      internalID: 4553361989324335924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786516ef6bc28ec80800000000000000
+      internalID: -8293329549339306361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb523a6d9e7dbf00800000000000000
+      internalID: 1134201895723883518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9586556c9625582f0800000000000000
+      internalID: -971279530375944103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0a8331da72d9d40800000000000000
+      internalID: 5592669936569327829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcbd4163c5334900800000000000000
+      internalID: 667436283048344755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96147078a5dcbc20800000000000000
+      internalID: 3223686352708310683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd9eb28536c35a00800000000000000
+      internalID: 744156296575360455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105abb2adb5a12b40800000000000000
+      internalID: 5413790460973655297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a48e1a22197ca9c0800000000000000
+      internalID: -3914620857168788313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d76a3a04eea4b00800000000000000
+      internalID: 813724644084710682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_16
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e88b58746b2dbb0800000000000000
+      internalID: -4912663825205391746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300367a604c275510800000000000000
+      internalID: 1537746452945973251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a0d780fd68e8930800000000000000
+      internalID: 4147400599333046875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3580c1ba131921a00800000000000000
+      internalID: 725802132470237267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049473dda29938080800000000000000
+      internalID: -9186330405526615744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfba4313338626f0800000000000000
+      internalID: -709735635874037832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_22
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5868bb781a09100800000000000000
+      internalID: 112767595023074726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdcc9ba9056325a0800000000000000
+      internalID: -6547278341058277893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb52ab5bf7b6e37d0800000000000000
+      internalID: -2936791710745090628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (32x32)_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d506fb2f6c56c48e0800000000000000
+      internalID: -1707878253529702307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
