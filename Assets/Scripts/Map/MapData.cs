@@ -6,36 +6,29 @@ using UnityEngine;
 [System.Serializable]
 public class MapData : ScriptableObject
 {
-    [SerializeField]
-    private GameObject mapPrefab = null;
+    [SerializeField] private GameObject mapPrefab = null;
 
-    [SerializeField]
-    private int mapSizeX = 64;
+    [SerializeField] private int columnCount = 32;
 
-    [SerializeField]
-    private int mapSizeY = 64;
+    [SerializeField] private int rowCount = 32;
 
-    [SerializeField]
-    private float startX = 0;
+    [SerializeField] private float startX = 0;
 
-    [SerializeField]
-    private float startY = 0;
+    [SerializeField] private float startY = 0;
 
-    [SerializeField]
-    private float offsetX = 0.32f;
+    [SerializeField] private float offsetX = 0.64f;
 
-    [SerializeField]
-    private float offsetY = 0.32f;
+    [SerializeField] private float offsetY = 0.64f;
 
     public GameObject MapPrefab => mapPrefab;
 
-    public int MapSizeX => mapSizeX;
+    public int ColumnCount => columnCount;
 
-    public int MapSizeY => mapSizeY;
+    public int RowCount => rowCount;
 
-    public float StartX => startX;
+    public float StartX => startX - columnCount / 2f * offsetX;
 
-    public float StartY => startY;
+    public float StartY => startY - rowCount / 2f * offsetY;
 
     public float OffsetX => offsetX;
 

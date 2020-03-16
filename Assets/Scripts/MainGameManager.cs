@@ -25,15 +25,16 @@ public class MainGameManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private MapData mapData;
+    [SerializeField] private MapData mapData;
 
     public MapManager MapManager;
+
+    public MapData MapData => mapData;
+
 
     private void Awake()
     {
         _instance = this;
         MapManager = new MapManager(mapData);
-        MapManager.CreateDefault();
     }
 }

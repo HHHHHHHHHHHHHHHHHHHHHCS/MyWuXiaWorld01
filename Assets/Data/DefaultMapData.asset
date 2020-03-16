@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapPrefab: {fileID: 7963708885771594795, guid: 17b34040e86bbb14fa2b8f596dbbad2d,
     type: 3}
-  mapSizeX: 128
-  mapSizeY: 128
+  columnCount: 32
+  rowCount: 32
   startX: 0
   startY: 0
-  offsetX: 0.32
-  offsetY: 0.32
+  offsetX: 0.64
+  offsetY: 0.64
