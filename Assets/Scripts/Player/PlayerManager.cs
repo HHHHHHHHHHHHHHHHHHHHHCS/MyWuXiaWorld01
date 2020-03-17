@@ -1,18 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerCtrl playerCtrl;
+    private PlayerAnim playerAnim;
 
-    // Update is called once per frame
-    void Update()
+    public void Awake()
     {
-        
+        playerCtrl = GetComponent<PlayerCtrl>();
+        playerAnim = GetComponent<PlayerAnim>();
     }
 }
