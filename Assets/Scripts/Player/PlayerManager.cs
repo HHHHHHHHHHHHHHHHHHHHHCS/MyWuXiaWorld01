@@ -41,6 +41,9 @@ public class PlayerManager : MonoBehaviour
         playerAnim = RegisterMono<PlayerAnim>(this);
 
         OnAwakeActions?.Invoke();
+
+        var x = UniversalRenderPipeline.asset.scriptableRenderer;
+        Debug.Log(x);
     }
 
     private void OnEnable()
@@ -57,4 +60,5 @@ public class PlayerManager : MonoBehaviour
     {
         OnUpdateActions?.Invoke();
     }
+
 }

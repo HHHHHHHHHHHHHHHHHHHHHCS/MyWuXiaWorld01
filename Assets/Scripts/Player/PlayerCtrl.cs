@@ -54,9 +54,12 @@ public class PlayerCtrl : PlayerMonoBase
             {
                 if (interaction.behavior == PressBehavior.PressOnly)
                 {
+                    Debug.Log(1);
                 }
                 else if (interaction.behavior == PressBehavior.ReleaseOnly)
                 {
+                    Debug.Log(2);
+
                 }
             }
         }
