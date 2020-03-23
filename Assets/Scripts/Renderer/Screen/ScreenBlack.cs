@@ -5,13 +5,14 @@ using UnityEngine.Rendering.Universal;
 
 public class ScreenBlack : ScriptableRendererFeature
 {
-    public static bool enableScreenBlack;
+    public static bool enableScreenBlack = false;
 
     class ScreenBlackPass : ScriptableRenderPass
     {
         private const string screenBlackShader = "MyWuXia/Screen/S_ScreenBlack";
 
         private Dictionary<string, Material> Materials = new Dictionary<string, Material>();
+
         public Material GetMaterial(string shaderName)
         {
             Material material;
@@ -25,7 +26,8 @@ public class ScreenBlack : ScriptableRendererFeature
 
                 if (shader == null)
                 {
-                    Debug.LogError("Shader not found (" + shaderName + "), check if missed shader is in Shaders folder if not reimport this package. If this problem occurs only in build try to add all shaders in Shaders folder to Always Included Shaders (Project Settings -> Graphics -> Always Included Shaders)");
+                    Debug.LogError("Shader not found (" + shaderName +
+                                   "), check if missed shader is in Shaders folder if not reimport this package. If this problem occurs only in build try to add all shaders in Shaders folder to Always Included Shaders (Project Settings -> Graphics -> Always Included Shaders)");
                 }
 
                 Material NewMaterial = new Material(shader);
@@ -37,6 +39,7 @@ public class ScreenBlack : ScriptableRendererFeature
 
 
         private int screenCopyID;
+        private RenderTargetIdentifier outRT;
 
         // This method is called before executing the render pass.
         // It can be used to configure render targets and their clear state. Also to create temporary render target textures.
@@ -45,6 +48,7 @@ public class ScreenBlack : ScriptableRendererFeature
         // The render pipeline will ensure target setup and clearing happens in an performance manner.
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
+            outRT = UniversalRenderPipeline.asset.scriptableRenderer.cameraColorTarget;
             screenCopyID = Shader.PropertyToID("_ScreenCopyTexture");
             cmd.GetTemporaryRT(screenCopyID, cameraTextureDescriptor);
         }
@@ -62,8 +66,8 @@ public class ScreenBlack : ScriptableRendererFeature
 
                 buffer.Blit(BuiltinRenderTextureType.CurrentActive, screenCopyID);
 
-                Material VignetteMaterial = GetMaterial(screenBlackShader);
-                buffer.Blit(screenCopyID, BuiltinRenderTextureType.CurrentActive, VignetteMaterial, 0);
+                Material screenBlackMaterial = GetMaterial(screenBlackShader);
+                buffer.Blit(screenCopyID, outRT, screenBlackMaterial, 0);
 
                 context.ExecuteCommandBuffer(buffer);
                 CommandBufferPool.Release(buffer);
@@ -75,8 +79,6 @@ public class ScreenBlack : ScriptableRendererFeature
         {
             cmd.ReleaseTemporaryRT(screenCopyID);
         }
-
-
     }
 
     ScreenBlackPass m_ScriptablePass;
@@ -86,7 +88,7 @@ public class ScreenBlack : ScriptableRendererFeature
         m_ScriptablePass = new ScreenBlackPass();
 
         // Configures where the render pass should be injected.
-        m_ScriptablePass.renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
+        m_ScriptablePass.renderPassEvent = RenderPassEvent.AfterRenderingTransparents;
     }
 
     // Here you can inject one or multiple render passes in the renderer.
@@ -96,5 +98,3 @@ public class ScreenBlack : ScriptableRendererFeature
         renderer.EnqueuePass(m_ScriptablePass);
     }
 }
-
-

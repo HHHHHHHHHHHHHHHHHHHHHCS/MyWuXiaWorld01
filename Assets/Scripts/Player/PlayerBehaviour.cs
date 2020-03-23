@@ -37,14 +37,23 @@ public class PlayerBehaviour : PlayerMonoBase
         var scrPos = playerManager.PlayerCtrl.MousePosition;
         if (scrPos != PlayerCtrl.NullMousePosition)
         {
-            haveInput = true;
-
             var inputPos = mainCamera.ScreenToWorldPoint(scrPos);
             var playerPos = playerManager.transform.position;
             inputPos.z += zOffset;
             offsetPos = inputPos - playerPos;
-            moveDir = GetMoveDirection(offsetPos);
-            rigi2D.velocity = offsetPos.normalized;
+
+            if (offsetPos.sqrMagnitude > 0.01f)
+            {
+                haveInput = true;
+                moveDir = GetMoveDirection(offsetPos);
+                rigi2D.velocity = offsetPos.normalized * playerManager.PlayerInfo.moveSpeed;
+            }
+            else
+            {
+                haveInput = false;
+                offsetPos = Vector2.zero;
+                rigi2D.velocity = Vector2.zero;
+            }
         }
         else
         {

@@ -40,14 +40,14 @@ public class CustomForwardRenderer : ScriptableRenderer
     CustomSceneViewDepthCopyPass m_SceneViewDepthCopyPass;
 #endif
 
-    RenderTargetHandle m_ActiveCameraColorAttachment;
-    RenderTargetHandle m_ActiveCameraDepthAttachment;
-    RenderTargetHandle m_CameraColorAttachment;
-    RenderTargetHandle m_CameraDepthAttachment;
-    RenderTargetHandle m_DepthTexture;
-    RenderTargetHandle m_OpaqueColor;
-    RenderTargetHandle m_AfterPostProcessColor;
-    RenderTargetHandle m_ColorGradingLut;
+    public RenderTargetHandle m_ActiveCameraColorAttachment;
+    public RenderTargetHandle m_ActiveCameraDepthAttachment;
+    public RenderTargetHandle m_CameraColorAttachment;
+    public RenderTargetHandle m_CameraDepthAttachment;
+    public RenderTargetHandle m_DepthTexture;
+    public RenderTargetHandle m_OpaqueColor;
+    public RenderTargetHandle m_AfterPostProcessColor;
+    public RenderTargetHandle m_ColorGradingLut;
 
     ForwardLights m_ForwardLights;
     StencilState m_DefaultStencilState;

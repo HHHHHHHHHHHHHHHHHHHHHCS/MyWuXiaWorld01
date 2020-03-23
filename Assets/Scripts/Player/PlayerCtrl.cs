@@ -9,11 +9,15 @@ public class PlayerCtrl : PlayerMonoBase
 {
     public static readonly Vector2 NullMousePosition = new Vector2(-1000, -1000);
 
+    private bool movePress;
+
     private PlayerInput playerInput;
 
     private Vector2 mousePosition;
 
     public Vector2 MousePosition => mousePosition;
+
+    public bool MovePress => movePress;
 
     public override void OnAwake()
     {
@@ -36,7 +40,7 @@ public class PlayerCtrl : PlayerMonoBase
 
     public override void OnUpdate()
     {
-        if (Mouse.current.leftButton.isPressed)
+        if (movePress && Mouse.current.leftButton.isPressed)
         {
             mousePosition = Mouse.current.position.ReadValue();
         }
@@ -54,12 +58,11 @@ public class PlayerCtrl : PlayerMonoBase
             {
                 if (interaction.behavior == PressBehavior.PressOnly)
                 {
-                    Debug.Log(1);
+                    movePress = true;
                 }
                 else if (interaction.behavior == PressBehavior.ReleaseOnly)
                 {
-                    Debug.Log(2);
-
+                    movePress = false;
                 }
             }
         }
@@ -73,7 +76,6 @@ public class PlayerCtrl : PlayerMonoBase
             }
         }
     }
-
 
     private void QWERCallback(InputAction.CallbackContext ctx)
     {

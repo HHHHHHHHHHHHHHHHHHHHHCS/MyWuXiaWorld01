@@ -6,6 +6,9 @@ using UnityEngine.Rendering.Universal;
 
 public class PlayerManager : MonoBehaviour
 {
+    public PlayerInfo thePlayerInfo;
+
+    private PlayerInfo playerInfo;
     private PlayerCtrl playerCtrl;
     private PlayerBehaviour playerBehaviour;
     private PlayerAnim playerAnim;
@@ -15,6 +18,7 @@ public class PlayerManager : MonoBehaviour
     private Action OnDisableActions;
     private Action OnUpdateActions;
 
+    public PlayerInfo PlayerInfo => playerInfo;
     public PlayerCtrl PlayerCtrl => playerCtrl;
     public PlayerBehaviour PlayerBehaviour => playerBehaviour;
     public PlayerAnim PlayerAnim => playerAnim;
@@ -36,14 +40,15 @@ public class PlayerManager : MonoBehaviour
 
     public void Awake()
     {
+        playerInfo = thePlayerInfo == null ? 
+            ScriptableObject.CreateInstance<PlayerInfo>() : thePlayerInfo.Clone<PlayerInfo>();
+
+
         playerCtrl = RegisterMono<PlayerCtrl>(this);
         playerBehaviour = RegisterMono<PlayerBehaviour>(this);
         playerAnim = RegisterMono<PlayerAnim>(this);
 
         OnAwakeActions?.Invoke();
-
-        var x = UniversalRenderPipeline.asset.scriptableRenderer;
-        Debug.Log(x);
     }
 
     private void OnEnable()
@@ -60,5 +65,4 @@ public class PlayerManager : MonoBehaviour
     {
         OnUpdateActions?.Invoke();
     }
-
 }
