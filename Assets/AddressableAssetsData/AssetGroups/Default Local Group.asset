@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ad3173c7070a6a245a752ea12b3f3f0f
+  m_SerializeEntries:
+  - m_GUID: 96a5270fddb7732488654629c723e700
+    m_Address: Assets/Prefabs/UI/TalkWidow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de22f5eab98ed7649877394c495b5b85
+    m_Address: Assets/Prefabs/Human/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8be7f803f9d5fbc46aa6ff6f94f126d2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7725dcd591052604680fe05e1fbb2bd3, type: 2}
+    - {fileID: 11400000, guid: 5d4dc5c9ab3971f4e92e5d702479d0f5, type: 2}
