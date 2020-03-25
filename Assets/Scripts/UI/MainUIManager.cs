@@ -19,35 +19,21 @@ public class MainUIManager : MonoBehaviour
         }
     }
 
-    public AssetReference TargetToLoad;
+    public UIWindowData uiWindowData;
 
+    private UITalkWindow talkWindow;
 
     private void Awake()
     {
         _instance = this;
-
-        LoadMethod();
+        UIWindowManager.Init(uiWindowData);
+        UIWindowManager.CreateWindow<UITalkWindow>(this, CreateTalkWindow);
     }
 
-    private void OnDisable()
+    public void CreateTalkWindow(UITalkWindow newTalkWindow)
     {
-        LoadMethod2();
-    }
-
-    public async void LoadMethod()
-    {
-        var v0 = await Addressables.LoadAssetAsync<GameObject>("Assets/Prefabs/UI/TalkWidow.prefab").Task;
-        //TargetToLoad.InstantiateAsync().Completed += OnInstantiatedCompleted;
-        Addressables.Release(v0);
-
-        var v1 = await Addressables.InstantiateAsync("Assets/Prefabs/UI/TalkWidow.prefab").Task;
-        //TargetToLoad.InstantiateAsync().Completed += OnInstantiatedCompleted;
-        Addressables.Release(v1);
-    }
-
-    public async void LoadMethod2()
-    {
-        var instance = await Addressables.LoadAssetAsync<GameObject>("Assets/Prefabs/Human/Player.prefab").Task;
-        Addressables.Release(instance);
+        talkWindow = newTalkWindow;
+        newTalkWindow.SetNameContext("xx", ".........");
+        newTalkWindow.AddClickButton("a", ()=>{});
     }
 }

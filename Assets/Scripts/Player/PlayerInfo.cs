@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewPlayerInfo", menuName = "UnitInfo/PlayerInfo")]
-[SerializeField]
+[System.Serializable]
 public class PlayerInfo : UnitInfo
 {
     public PlayerInfo()
