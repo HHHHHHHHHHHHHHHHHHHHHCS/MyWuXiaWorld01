@@ -27,7 +27,7 @@ public class MainUIManager : MonoBehaviour
     {
         _instance = this;
         UIWindowManager.Init(uiWindowData);
-        UIWindowManager.CreateWindow<UITalkWindow>(this, CreateTalkWindow);
+        //UIWindowManager.CreateWindow<UITalkWindow>(this, CreateTalkWindow);
     }
 
     public void CreateTalkWindow(UITalkWindow newTalkWindow)
