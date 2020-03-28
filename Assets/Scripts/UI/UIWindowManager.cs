@@ -13,10 +13,11 @@ public static class UIWindowManager
     public static void Init(UIWindowData _uiWindowData)
     {
         uiWindowData = _uiWindowData;
+
     }
 
     public static void CreateWindow<T>(MainUIManager uiManager, Action<T> act)
-        where T : UIWindowMonoBase,new()
+        where T : UIWindowMonoBase, new()
     {
         if (uiWindowData == null)
         {
@@ -39,6 +40,5 @@ public static class UIWindowManager
         {
             Debug.LogError("Can't Find Register Class!");
         }
-
     }
 }
