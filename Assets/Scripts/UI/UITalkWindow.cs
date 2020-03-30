@@ -8,6 +8,8 @@ using Object = UnityEngine.Object;
 
 public class UITalkWindow : UIWindowMonoBase
 {
+    protected static bool isInit;
+
     private Button prefab_ClickButton;
     private Text nameText;
     private Text contextText;
@@ -16,6 +18,18 @@ public class UITalkWindow : UIWindowMonoBase
     private List<Button> clickButtonList;
 
     public List<Button> ClickButtonList => clickButtonList;
+
+    public static void Create(MainUIManager uiManager, Action<UITalkWindow> act)
+    {
+        if (!isInit)
+        {
+            isInit = true;
+            UIWindowManager.windowDictionary.Add(typeof(UITalkWindow),
+                UIWindowManager.uiWindowData.talkWindowAsset);
+        }
+
+        UIWindowManager.CreateWindow(uiManager, act);
+    }
 
     public override void OnCtor(MainUIManager _uiManager, Transform _root)
     {

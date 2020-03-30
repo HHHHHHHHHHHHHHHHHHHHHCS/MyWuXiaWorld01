@@ -21,19 +21,13 @@ public class MainUIManager : MonoBehaviour
 
     public UIWindowData uiWindowData;
 
-    private UITalkWindow talkWindow;
 
     private void Awake()
     {
         _instance = this;
         UIWindowManager.Init(uiWindowData);
-        //UIWindowManager.CreateWindow<UITalkWindow>(this, CreateTalkWindow);
-    }
-
-    public void CreateTalkWindow(UITalkWindow newTalkWindow)
-    {
-        talkWindow = newTalkWindow;
-        newTalkWindow.SetNameContext("xx", ".........");
-        newTalkWindow.AddClickButton("a", ()=>{});
+        var x = new StartFlowUI();
+        x.OnCtor(this, this.transform);
+        x.OnAwake();
     }
 }

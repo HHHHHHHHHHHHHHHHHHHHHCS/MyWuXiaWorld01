@@ -8,12 +8,14 @@ using Object = UnityEngine.Object;
 
 public static class UIWindowManager
 {
+    public static Dictionary<Type, AssetReference> windowDictionary
+        = new Dictionary<Type, AssetReference>();
+
     public static UIWindowData uiWindowData;
 
     public static void Init(UIWindowData _uiWindowData)
     {
         uiWindowData = _uiWindowData;
-
     }
 
     public static void CreateWindow<T>(MainUIManager uiManager, Action<T> act)
@@ -25,16 +27,15 @@ public static class UIWindowManager
             return;
         }
 
-        if (typeof(T) == typeof(UITalkWindow))
+        if (windowDictionary.TryGetValue(typeof(T), out AssetReference asset))
         {
-            uiWindowData.talkWindowAsset.LoadAssetAsync<GameObject>().Completed += operation =>
-            {
-                var instObj = Object.Instantiate(operation.Result);
-                T window = new T();
-                window.OnCtor(uiManager, instObj.transform);
-                act(window);
-                Addressables.Release(operation.Result);
-            };
+            AddressManager.LoadAssetReference(asset,
+                (obj) =>
+                {
+                    T window = new T();
+                    window.OnCtor(uiManager, obj.transform);
+                    act(window);
+                });
         }
         else
         {

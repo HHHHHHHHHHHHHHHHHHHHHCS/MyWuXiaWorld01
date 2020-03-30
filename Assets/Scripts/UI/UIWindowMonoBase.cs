@@ -7,8 +7,7 @@ public class UIWindowMonoBase
     public Transform root;
     protected MainUIManager mainUIManager;
 
-
-    public virtual void OnCtor(MainUIManager _uiManager, Transform _root)
+    public virtual void OnCtor(MainUIManager _uiManager, Transform _root) 
     {
         root = _root;
         mainUIManager = _uiManager;

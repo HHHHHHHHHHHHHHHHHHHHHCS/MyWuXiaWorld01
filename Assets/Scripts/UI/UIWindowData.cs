@@ -9,4 +9,5 @@ using UnityEngine.AddressableAssets;
 public class UIWindowData : ScriptableObject
 {
     public AssetReference talkWindowAsset;
+    public AssetReference screenButtonWindowAsset;
 }

@@ -13,8 +13,8 @@ public class AddressManager
         Addressables.LoadAssetAsync<T>(path).Completed += (res) =>
         {
             var ins = Object.Instantiate(res.Result);
-            act(ins);
             Addressables.Release(res.Result);
+            act(ins);
         };
     }
 
@@ -36,5 +36,16 @@ public class AddressManager
     public static void ReleaseInstance(GameObject obj)
     {
         Addressables.ReleaseInstance(obj);
+    }
+
+
+    public static void LoadAssetReference(AssetReference ar, Action<GameObject> act)
+    {
+        ar.LoadAssetAsync<GameObject>().Completed += operation =>
+        {
+            var instObj = Object.Instantiate(operation.Result);
+            Addressables.Release(operation.Result);
+            act(instObj);
+        };
     }
 }
