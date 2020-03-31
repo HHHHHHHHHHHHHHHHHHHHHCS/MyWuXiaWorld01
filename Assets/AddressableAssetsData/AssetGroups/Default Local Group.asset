@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: ad3173c7070a6a245a752ea12b3f3f0f
   m_SerializeEntries:
   - m_GUID: 7a61b40b9bf7e8b4396741384d0a033f
-    m_Address: Assets/Prefabs/UI/ScreenButtonWindow.prefab
+    m_Address: Assets/Prefabs/UI/Window/ScreenButtonWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 96a5270fddb7732488654629c723e700
-    m_Address: Assets/Prefabs/UI/TalkWidow.prefab
+    m_Address: Assets/Prefabs/UI/Window/TalkWidow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: a8181cd17b8c21c4ba1484b0957613bb
@@ -30,7 +30,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: c982b271907e2a041b44a3935e666d03
-    m_Address: Assets/Prefabs/UI/HalfScreenTextWindow.prefab
+    m_Address: Assets/Prefabs/UI/Window/HalfScreenButtonWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: de22f5eab98ed7649877394c495b5b85

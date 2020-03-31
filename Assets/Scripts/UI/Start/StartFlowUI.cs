@@ -27,12 +27,12 @@ public class StartFlowUI : UIWindowMonoBase
 
     public void Flow2()
     {
-        window.SetImageAndText(null, "是哪个混蛋在窗外!!!\n看我不砍死你!!!");
+        window.SetImageAndText(null, "是哪个混蛋在窗外!!!\n看老娘不砍死你!!!");
         window.SetNextButtonEvent(Flow3);
     }
 
     public void Flow3()
     {
-
+        Object.Destroy(window.root.gameObject);
     }
 }

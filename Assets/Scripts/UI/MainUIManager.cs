@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MainUIManager : MonoBehaviour
@@ -18,6 +20,24 @@ public class MainUIManager : MonoBehaviour
             return _instance;
         }
     }
+
+    private static InputSystemUIInputModule uiInputModule;
+
+    public static InputSystemUIInputModule UIInputModule
+    {
+        get
+        {
+            if (uiInputModule == null)
+            {
+                uiInputModule = FindObjectOfType<InputSystemUIInputModule>();
+            }
+
+            return uiInputModule;
+        }
+    }
+
+    public static bool IsTouchUI => UIInputModule.IsPointerOverGameObject(Mouse.current.deviceId);
+
 
     public UIWindowData uiWindowData;
 

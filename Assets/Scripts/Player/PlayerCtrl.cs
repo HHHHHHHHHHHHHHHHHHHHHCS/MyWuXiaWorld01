@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerCtrl : PlayerMonoBase
 {
@@ -56,12 +58,22 @@ public class PlayerCtrl : PlayerMonoBase
         {
             if (ctx.interaction is PressInteraction interaction)
             {
-                if (interaction.behavior == PressBehavior.PressOnly)
+                if (!MainUIManager.IsTouchUI)
                 {
-                    movePress = true;
+                    Debug.Log(2);
+
+                    if (interaction.behavior == PressBehavior.PressOnly)
+                    {
+                        movePress = true;
+                    }
+                    else if (interaction.behavior == PressBehavior.ReleaseOnly)
+                    {
+                        movePress = false;
+                    }
                 }
-                else if (interaction.behavior == PressBehavior.ReleaseOnly)
+                else
                 {
+                    Debug.Log(1);
                     movePress = false;
                 }
             }
