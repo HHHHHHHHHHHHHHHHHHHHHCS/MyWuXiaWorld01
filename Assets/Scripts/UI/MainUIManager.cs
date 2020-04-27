@@ -46,8 +46,10 @@ public class MainUIManager : MonoBehaviour
     {
         _instance = this;
         UIWindowManager.Init(uiWindowData);
-        var x = new StartFlowUI();
-        x.OnCtor(this, this.transform);
-        x.OnAwake();
+        UITipsWindow.Create(this, null);
+
+//        var startFlowUI = new StartFlowUI();
+//        startFlowUI.OnCtor(this, this.transform);
+//        startFlowUI.OnAwake();
     }
 }

@@ -60,8 +60,6 @@ public class PlayerCtrl : PlayerMonoBase
             {
                 if (!MainUIManager.IsTouchUI)
                 {
-                    Debug.Log(2);
-
                     if (interaction.behavior == PressBehavior.PressOnly)
                     {
                         movePress = true;
@@ -73,7 +71,6 @@ public class PlayerCtrl : PlayerMonoBase
                 }
                 else
                 {
-                    Debug.Log(1);
                     movePress = false;
                 }
             }

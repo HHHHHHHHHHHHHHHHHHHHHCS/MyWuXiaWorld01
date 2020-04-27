@@ -34,7 +34,7 @@ public static class UIWindowManager
                 {
                     T window = new T();
                     window.OnCtor(uiManager, obj.transform);
-                    act(window);
+                    act?.Invoke(window);
                 });
         }
         else

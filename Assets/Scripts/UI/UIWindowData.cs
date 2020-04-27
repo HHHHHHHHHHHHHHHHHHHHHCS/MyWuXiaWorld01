@@ -10,4 +10,5 @@ public class UIWindowData : ScriptableObject
 {
     public AssetReference talkWindowAsset;
     public AssetReference screenButtonWindowAsset;
+    public AssetReference tipsWindowAsset;
 }
