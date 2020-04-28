@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartFlowUI : UIWindowMonoBase
+public class StartUIFlowController : AbsUIControllerBase
 {
     private UIScreenButtonWindow window;
-
 
     public override void OnAwake()
     {
@@ -33,6 +32,6 @@ public class StartFlowUI : UIWindowMonoBase
 
     public void Flow3()
     {
-        Object.Destroy(window.root.gameObject);
+        Object.Destroy(window.transform.gameObject);
     }
 }

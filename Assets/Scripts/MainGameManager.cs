@@ -37,4 +37,8 @@ public class MainGameManager : MonoBehaviour
         _instance = this;
         MapManager = new MapManager(mapData);
     }
+
+    private void Update()
+    {
+    }
 }

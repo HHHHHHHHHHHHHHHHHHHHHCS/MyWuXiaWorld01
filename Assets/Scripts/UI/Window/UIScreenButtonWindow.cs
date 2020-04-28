@@ -27,12 +27,12 @@ public class UIScreenButtonWindow : UIWindowMonoBase
         UIWindowManager.CreateWindow(uiManager, act);
     }
 
-    public override void OnCtor(MainUIManager _uiManager, Transform _root)
+    public override void OnCtor(MainUIManager _mainUIManager, Transform _transform)
     {
-        base.OnCtor(_uiManager, _root);
-        nextButton = root.Find("NextButton").GetComponent<Button>();
+        base.OnCtor(_mainUIManager, _transform);
+        nextButton = transform.Find("NextButton").GetComponent<Button>();
         nextText = nextButton.transform.Find("NextText").GetComponent<Text>();
-        jumpButton = root.Find("JumpButton").GetComponent<Button>();
+        jumpButton = transform.Find("JumpButton").GetComponent<Button>();
         jumpText = jumpButton.transform.Find("JumpText").GetComponent<Text>();
 
         defaultSprite = nextButton.image.sprite;

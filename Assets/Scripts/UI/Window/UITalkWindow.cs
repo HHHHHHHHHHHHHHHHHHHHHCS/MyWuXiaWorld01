@@ -31,13 +31,13 @@ public class UITalkWindow : UIWindowMonoBase
         UIWindowManager.CreateWindow(uiManager, act);
     }
 
-    public override void OnCtor(MainUIManager _uiManager, Transform _root)
+    public override void OnCtor(MainUIManager _mainUIManager, Transform _transform)
     {
-        base.OnCtor(_uiManager, _root);
-        prefab_ClickButton = root.Find("Prefab_ClickButton").GetComponent<Button>();
-        nameText = root.Find("BottomBar/NamText").GetComponent<Text>();
-        contextText = root.Find("BottomBar/ContextText").GetComponent<Text>();
-        rightBar = root.Find("RightBar");
+        base.OnCtor(_mainUIManager, _transform);
+        prefab_ClickButton = transform.Find("Prefab_ClickButton").GetComponent<Button>();
+        nameText = transform.Find("BottomBar/NamText").GetComponent<Text>();
+        contextText = transform.Find("BottomBar/ContextText").GetComponent<Text>();
+        rightBar = transform.Find("RightBar");
         clickButtonList = new List<Button>();
     }
 
@@ -94,6 +94,6 @@ public class UITalkWindow : UIWindowMonoBase
 
     public void Close()
     {
-        Object.Destroy(root.gameObject);
+        Object.Destroy(transform.gameObject);
     }
 }

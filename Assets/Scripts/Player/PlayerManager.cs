@@ -6,6 +6,8 @@ using UnityEngine.Rendering.Universal;
 
 public class PlayerManager : MonoBehaviour
 {
+    public static PlayerManager instance;
+
     public PlayerInfo thePlayerInfo;
 
     private PlayerInfo playerInfo;
@@ -40,6 +42,8 @@ public class PlayerManager : MonoBehaviour
 
     public void Awake()
     {
+        instance = this;
+
         playerInfo = thePlayerInfo == null ? 
             ScriptableObject.CreateInstance<PlayerInfo>() : thePlayerInfo.Clone<PlayerInfo>();
 

@@ -23,15 +23,32 @@ public class UITipsWindow : UIWindowMonoBase
         UIWindowManager.CreateWindow(uiManager, act);
     }
 
-    public override void OnCtor(MainUIManager _uiManager, Transform _root)
+    public override void OnCtor(MainUIManager _mainUIManager, Transform _transform)
     {
-        base.OnCtor(_uiManager, _root);
+        base.OnCtor(_mainUIManager, _transform);
 
-        rayCastTransform = _root.Find("TipsImage") as RectTransform;
+        rayCastTransform = _transform.Find("TipsImage") as RectTransform;
+    }
+
+    public void UpdatePos(float x = 0, float y = 0, float width = 128, float height = 128)
+    {
+        rayCastTransform.localPosition = new Vector3(x, y, 0);
+        rayCastTransform.sizeDelta = new Vector2(width, height);
         CreateBlock(rayCastTransform);
     }
 
-    public void CreateBlock(RectTransform tips)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="rect">pos and size default is vector4(0, 0, 128, 128)</param>
+    public void UpdatePos(Rect rect)
+    {
+        rayCastTransform.localPosition = rect.position;
+        rayCastTransform.sizeDelta = rect.size;
+        CreateBlock(rayCastTransform);
+    }
+
+    private void CreateBlock(RectTransform tips)
     {
         if (block == null)
         {
@@ -39,7 +56,7 @@ public class UITipsWindow : UIWindowMonoBase
             for (int i = 0; i < 4; ++i)
             {
                 var go = new GameObject("Block");
-                go.transform.SetParent(root, false);
+                go.transform.SetParent(transform, false);
                 go.AddComponent<UIEmptyRayCast>();
                 block[i] = go.transform as RectTransform;
             }
@@ -52,7 +69,7 @@ public class UITipsWindow : UIWindowMonoBase
         float bottom = localPosition.y - sizeDelta.y / 2.0f;
         float up = localPosition.y + sizeDelta.y / 2.0f;
 
-        var screenSize = ((RectTransform) root).rect.size;
+        var screenSize = ((RectTransform) transform).rect.size;
 
         float rb = screenSize.x / 2;
         float lb = -rb;

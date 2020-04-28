@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class UIWindowMonoBase
 {
-    public Transform root;
+    public Transform transform;
     protected MainUIManager mainUIManager;
 
-    public virtual void OnCtor(MainUIManager _uiManager, Transform _root) 
+    public virtual void OnCtor(MainUIManager _mainUIManager, Transform _transform) 
     {
-        root = _root;
-        mainUIManager = _uiManager;
-        _root.SetParent(_uiManager.transform,false);
+        transform = _transform;
+        mainUIManager = _mainUIManager;
+        _transform.SetParent(_mainUIManager.transform,false);
     }
 
     public virtual void OnAwake()
