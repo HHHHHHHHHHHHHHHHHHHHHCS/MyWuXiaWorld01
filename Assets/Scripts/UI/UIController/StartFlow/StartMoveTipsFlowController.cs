@@ -1,13 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class StartMoveTipsFlowController : AbsUIControllerBase
 {
     private UITipsWindow window;
+    private Action finishedAction;
 
     public override void OnAwake()
     {
+    }
+
+    public void Show(Action endAct)
+    {
+        //update finished 检测函数  
+        //完成事件
+        finishedAction = endAct;
         UITipsWindow.Create(mainUIManager, ShowWindow);
     }
 

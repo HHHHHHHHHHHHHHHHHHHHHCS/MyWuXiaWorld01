@@ -43,22 +43,19 @@ public class MainUIManager : MonoBehaviour
 
     public List<UIWindowMonoBase> uiWindowList;
 
-
     private void Awake()
     {
         _instance = this;
         uiWindowList = new List<UIWindowMonoBase>();
         UIWindowManager.Init(uiWindowData);
-
     }
 
     private void Start()
     {
-        var startUIFlow = UIControllerManager.CreateController<StartUIFlowController>(this);
+        UIFlowStep.CreateStartUIFlowController();
     }
 
     private void Update()
     {
-        
     }
 }

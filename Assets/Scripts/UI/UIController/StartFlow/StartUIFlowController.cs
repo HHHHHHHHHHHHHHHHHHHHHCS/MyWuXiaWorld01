@@ -1,13 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class StartUIFlowController : AbsUIControllerBase
 {
     private UIScreenButtonWindow window;
+    private Action finishedAct;
 
     public override void OnAwake()
     {
+    }
+
+    public void Show(Action endAct)
+    {
+        finishedAct = endAct;
         UIScreenButtonWindow.Create(mainUIManager, ShowWindow);
     }
 
@@ -33,5 +40,6 @@ public class StartUIFlowController : AbsUIControllerBase
     public void Flow3()
     {
         Object.Destroy(window.transform.gameObject);
+        finishedAct();
     }
 }
