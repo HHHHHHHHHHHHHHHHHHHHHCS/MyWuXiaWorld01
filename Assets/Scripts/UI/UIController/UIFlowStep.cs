@@ -17,7 +17,8 @@
         if (startUIFlow == null)
         {
             startUIFlow = UIControllerManager.CreateController<StartUIFlowController>(MainUIManager.Instance);
-            startUIFlow.Show(CreateStartMoveTipsFlowController);
+            startUIFlow.Init(CreateStartMoveTipsFlowController);
+            startUIFlow.OnShow();
         }
     }
 
@@ -38,8 +39,10 @@
         if (startMoveTipsFlow == null)
         {
             StartUIFlow = null;
-            startMoveTipsFlow = UIControllerManager.CreateController<StartMoveTipsFlowController>(MainUIManager.Instance);
-            startMoveTipsFlow.Show(null);
+            startMoveTipsFlow =
+                UIControllerManager.CreateController<StartMoveTipsFlowController>(MainUIManager.Instance);
+            startMoveTipsFlow.OnInit(null, null, -410, -434);
+            startMoveTipsFlow.OnShow();
         }
     }
 }

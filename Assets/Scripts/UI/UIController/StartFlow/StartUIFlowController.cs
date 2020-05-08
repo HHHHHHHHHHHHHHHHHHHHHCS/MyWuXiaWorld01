@@ -12,9 +12,13 @@ public class StartUIFlowController : AbsUIControllerBase
     {
     }
 
-    public void Show(Action endAct)
+    public void Init(Action endAct)
     {
         finishedAct = endAct;
+    }
+
+    public override void OnShow()
+    {
         UIScreenButtonWindow.Create(mainUIManager, ShowWindow);
     }
 

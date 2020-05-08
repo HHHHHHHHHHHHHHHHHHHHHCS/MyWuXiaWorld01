@@ -13,11 +13,11 @@ public class AbsUIControllerBase
     {
     }
 
-    public virtual void OnEnable()
+    public virtual void OnShow()
     {
     }
 
-    public virtual void OnDisable()
+    public virtual void OnHide()
     {
     }
 
