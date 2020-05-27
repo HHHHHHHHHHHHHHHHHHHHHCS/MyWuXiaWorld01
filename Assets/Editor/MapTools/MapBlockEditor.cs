@@ -18,6 +18,7 @@ public class MapBlockEditor : Editor
 
     private Sprite sprite = null;
     private int line = -1;
+    private int x0 = -1, y0 = -1, x1 = -1, y1 = -1;
 
     public override void OnInspectorGUI()
     {
@@ -139,5 +140,7 @@ public class MapBlockEditor : Editor
                 spr.sprite = replaceSpr;
             }
         }
+
+        //TODO:地形工具使用不是很爽  比如选中头尾两块 自动填充
     }
 }

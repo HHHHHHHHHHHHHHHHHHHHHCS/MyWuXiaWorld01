@@ -21,7 +21,7 @@ public class AbsUIControllerBase
     {
     }
 
-    public virtual void OnUpdate()
+    public virtual void OnUpdate(float deltaTime)
     {
     }
 }

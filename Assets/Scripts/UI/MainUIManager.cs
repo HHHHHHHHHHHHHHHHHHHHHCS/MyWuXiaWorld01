@@ -41,21 +41,35 @@ public class MainUIManager : MonoBehaviour
 
     public UIWindowData uiWindowData;
 
+    public List<AbsUIControllerBase> uiControllerList;
     public List<UIWindowMonoBase> uiWindowList;
+
 
     private void Awake()
     {
         _instance = this;
+        uiControllerList = new List<AbsUIControllerBase>();
         uiWindowList = new List<UIWindowMonoBase>();
         UIWindowManager.Init(uiWindowData);
     }
 
     private void Start()
     {
-        UIFlowStep.CreateStartUIFlowController();
+        StartUIFlowStep.Instance.CreateStartUIFlowController();
     }
 
     private void Update()
     {
+        float deltaTime = Time.deltaTime;
+
+        foreach (var controllerBase in uiControllerList)
+        {
+            controllerBase.OnUpdate(deltaTime);
+        }
+
+        foreach (var uiWindowMonoBase in uiWindowList)
+        {
+            uiWindowMonoBase.OnUpdate(deltaTime);
+        }
     }
 }

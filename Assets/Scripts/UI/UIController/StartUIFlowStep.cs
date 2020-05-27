@@ -1,18 +1,38 @@
-﻿public static class UIFlowStep
-{
-    private static StartUIFlowController startUIFlow;
+﻿using UnityEngine;
 
-    public static StartUIFlowController StartUIFlow
+public class StartUIFlowStep
+{
+    private static StartUIFlowStep _instance;
+
+    public static StartUIFlowStep Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new StartUIFlowStep();
+            }
+
+            return _instance;
+        }
+    }
+
+    #region StartUIFlowController
+
+    private StartUIFlowController startUIFlow;
+
+    public StartUIFlowController StartUIFlow
     {
         get
         {
             CreateStartUIFlowController();
             return startUIFlow;
         }
+
         set => startUIFlow = value;
     }
 
-    public static void CreateStartUIFlowController()
+    public void CreateStartUIFlowController()
     {
         if (startUIFlow == null)
         {
@@ -22,9 +42,13 @@
         }
     }
 
-    private static StartMoveTipsFlowController startMoveTipsFlow;
+    #endregion
 
-    public static StartMoveTipsFlowController StartMoveTipsFlow
+    #region StartMoveTipsFlowController
+
+    private StartMoveTipsFlowController startMoveTipsFlow;
+
+    public StartMoveTipsFlowController StartMoveTipsFlow
     {
         get
         {
@@ -34,15 +58,20 @@
         set => startMoveTipsFlow = value;
     }
 
-    public static void CreateStartMoveTipsFlowController()
+    public void CreateStartMoveTipsFlowController()
     {
         if (startMoveTipsFlow == null)
         {
+            UIControllerManager.RemoveController(MainUIManager.Instance, StartUIFlow);
             StartUIFlow = null;
             startMoveTipsFlow =
                 UIControllerManager.CreateController<StartMoveTipsFlowController>(MainUIManager.Instance);
-            startMoveTipsFlow.OnInit(null, null, -410, -434);
+            startMoveTipsFlow.OnInit( -410, -434);
             startMoveTipsFlow.OnShow();
         }
     }
+
+
+
+    #endregion
 }

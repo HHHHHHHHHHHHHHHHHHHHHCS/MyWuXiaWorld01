@@ -9,7 +9,7 @@ using UnityEngine.InputSystem.UI;
 
 public class PlayerCtrl : PlayerMonoBase
 {
-    public static readonly Vector2 NullMousePosition = new Vector2(-1000, -1000);
+    public static readonly Vector2 NullMousePosition = new Vector2(float.MinValue, float.MinValue);
 
     private bool movePress;
 
@@ -44,7 +44,14 @@ public class PlayerCtrl : PlayerMonoBase
     {
         if (movePress && Mouse.current.leftButton.isPressed)
         {
-            mousePosition = Mouse.current.position.ReadValue();
+            if (!MainUIManager.IsTouchUI)
+            {
+                mousePosition = Mouse.current.position.ReadValue();
+            }
+            else
+            {
+                mousePosition = NullMousePosition;
+            }
         }
         else
         {
