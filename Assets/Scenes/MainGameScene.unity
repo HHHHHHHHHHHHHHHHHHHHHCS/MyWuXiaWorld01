@@ -529,6 +529,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1096681947, guid: 57c8a30991ef4af4dbb063eb02d4b8a3, type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 310611168652593565, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2936791710745090628, guid: 1defd914ffc3cef4f935a69e5a3d2665,
+        type: 3}
     - target: {fileID: 1544387373173372904, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -589,6 +599,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapBlockRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 2723345651385366056, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5097210526339842007, guid: 1defd914ffc3cef4f935a69e5a3d2665,
+        type: 3}
+    - target: {fileID: 5015742221945348539, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2936791710745090628, guid: 1defd914ffc3cef4f935a69e5a3d2665,
+        type: 3}
+    - target: {fileID: 5533147000397916194, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2936791710745090628, guid: 1defd914ffc3cef4f935a69e5a3d2665,
+        type: 3}
+    - target: {fileID: 7607014648568366166, guid: 57c8a30991ef4af4dbb063eb02d4b8a3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2936791710745090628, guid: 1defd914ffc3cef4f935a69e5a3d2665,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57c8a30991ef4af4dbb063eb02d4b8a3, type: 3}
 --- !u!1001 &2232917451248576548
