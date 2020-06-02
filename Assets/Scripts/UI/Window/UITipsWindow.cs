@@ -30,11 +30,16 @@ public class UITipsWindow : UIWindowMonoBase
         rayCastTransform = _transform.Find("TipsImage") as RectTransform;
     }
 
+    public void UpdatePos(in Vector2 pos, in Vector2 wh)
+    {
+        rayCastTransform.localPosition = pos;
+        rayCastTransform.sizeDelta = wh;
+        CreateBlock(rayCastTransform);
+    }
+
     public void UpdatePos(float x = 0, float y = 0, float width = 128, float height = 128)
     {
-        rayCastTransform.localPosition = new Vector3(x, y, 0);
-        rayCastTransform.sizeDelta = new Vector2(width, height);
-        CreateBlock(rayCastTransform);
+        UpdatePos(new Vector2(x, y), new Vector2(width, height));
     }
 
     /// <summary>

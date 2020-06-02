@@ -66,7 +66,7 @@ public class StartUIFlowStep
             StartUIFlow = null;
             startMoveTipsFlow =
                 UIControllerManager.CreateController<StartMoveTipsFlowController>(MainUIManager.Instance);
-            startMoveTipsFlow.OnInit( -410, -434);
+            startMoveTipsFlow.OnInit( );
             startMoveTipsFlow.OnShow();
         }
     }

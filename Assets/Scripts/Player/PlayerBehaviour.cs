@@ -12,6 +12,8 @@ public class PlayerBehaviour : PlayerMonoBase
         Right
     }
 
+    public bool CanMove { get; set; } = true;
+
     private Camera mainCamera;
     private float zOffset;
 
@@ -35,7 +37,7 @@ public class PlayerBehaviour : PlayerMonoBase
     public override void OnUpdate()
     {
         var scrPos = playerManager.PlayerCtrl.MousePosition;
-        if (scrPos != PlayerCtrl.NullMousePosition)
+        if (CanMove && scrPos != PlayerCtrl.NullMousePosition)
         {
             var inputPos = mainCamera.ScreenToWorldPoint(scrPos);
             var playerPos = playerManager.transform.position;

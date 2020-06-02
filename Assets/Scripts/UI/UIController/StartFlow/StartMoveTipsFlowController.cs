@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class StartMoveTipsFlowController : AbsUIControllerBase
 {
+    private readonly Rect tipsRect = new Rect(new Vector2(-474f, -463f), new Vector2(128f, 128f));
+    private readonly Vector3 endPos = new Vector3(6.58f, 3.58f, -5f);
+    private readonly Vector4 checkRect = new Vector4(5.5f, 6.2f, 5.8f, 6.4f);
+
+
     private UITipsWindow window;
 
     //0:未开启  1:玩家位置1检测  2:镜头移动  3:玩家位置2检测
@@ -12,10 +17,8 @@ public class StartMoveTipsFlowController : AbsUIControllerBase
 
     private bool isFinished;
 
-    private float x, y, w, h;
-
     private Vector3 startPos;
-    private Vector3 endPos = new Vector3(10.24f, 6.5f, -5f);
+
     private float moveTime = 1f;
     private float moveTimer = 0f;
 
@@ -26,13 +29,8 @@ public class StartMoveTipsFlowController : AbsUIControllerBase
     {
     }
 
-    public void OnInit(float _x = 0, float _y = 0
-        , float _width = 128, float _height = 128)
+    public void OnInit()
     {
-        x = _x;
-        y = _y;
-        w = _width;
-        h = _height;
     }
 
     public override void OnShow()
@@ -45,7 +43,7 @@ public class StartMoveTipsFlowController : AbsUIControllerBase
     public void ShowWindow(UITipsWindow _window)
     {
         window = _window;
-        window.UpdatePos(x, y, w, h);
+        window.UpdatePos(tipsRect.position, tipsRect.size);
         nowState = 1;
     }
 
@@ -82,7 +80,7 @@ public class StartMoveTipsFlowController : AbsUIControllerBase
     {
         var pos = PlayerManager.instance.transform.position;
 
-        if (pos.x >= 5.9f && pos.y >= 5.6f && pos.x <= 7.0f && pos.y <= 6.7f)
+        if (pos.x >= checkRect.x && pos.y >= checkRect.z && pos.x <= checkRect.y && pos.y <= checkRect.w)
         {
             return true;
         }
@@ -92,13 +90,11 @@ public class StartMoveTipsFlowController : AbsUIControllerBase
 
     public void StartMoveTipsFloEndAct()
     {
-        //鼠标先进点在出点的BUG
-        //镜头默认跟随玩家中间  但是处于引导模式的时候锁死   地图边界无所谓
-
         startPos = MainCameraManager.position;
         moveTimer = 0f;
         nowState = 2;
         moveMainCamera = true;
         window.UpdatePos(0, 0, 0, 0);
+        PlayerManager.instance.PlayerBehaviour.CanMove = false;
     }
 }

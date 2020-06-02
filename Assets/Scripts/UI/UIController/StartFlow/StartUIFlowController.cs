@@ -25,7 +25,7 @@ public class StartUIFlowController : AbsUIControllerBase
     public void ShowWindow(UIScreenButtonWindow _window)
     {
         window = _window;
-        window.SetImageAndText(null, "又能偷看李妮子洗澡了,嘿嘿嘿!");
+        window.SetImageAndText(null, "又能偷看小慧洗澡了,嘿嘿嘿!");
         window.SetNextButtonEvent(Flow1);
     }
 
